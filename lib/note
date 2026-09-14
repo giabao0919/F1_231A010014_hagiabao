@@ -1,0 +1,48 @@
+flutter -h
+flutter project
+flutter doctor --android-licenses
+
+(lệnh kiểu tra môi trường cần)
+flutter doctor
+
+(lệnh xóa case)
+flutter clear
+(lệnh cài lại thư viện)
+flutter pub get
+(lệnh chạy chưong trình)
+flutter run
+
+PS C:\dev> flutter --version 
+PS C:\dev> flutter doctor 
+PS C:\dev> flutter doctor --android-licenses # gõ y để chấp nhận từng license 
+PS C:\dev> flutter doctor -v # xem chi tiết khi có lỗi
+
+
+
+(nhóm gây làm chậm quá trình khởi động)
+cd "C:\Users\ASUS\.nuget\OneDrive\Desktop\code\daihoc\app_mobai\lib\android"
+.\gradlew.bat --stop
+
+(link khởi động)
+cd "C:\Users\ASUS\.nuget\OneDrive\Desktop\code\daihoc\app_mobai\lib"
+flutter run
+
+
+
+(flutter run hiện tại đang chạy là main.dart)
+    lệnh chạy bài (trực tiếp trên vs code)
+dart run lib/bai1.dart
+dart run lib/bai2.dart
+dart run lib/bai2nangcao.dart
+dart run lib/bai3.dart
+dart run lib/bai4.dart
+dart run lib/bai5.dart
+
+    lệnh chạy bài (trên điện thoại thật)
+flutter run -t lib/demo.dart
+flutter run --target=lib/demo.dart
+
+flutter run -t lib/main.dart
+flutter run -t lib/main.dart -d R58NC2E56ZZ  (-d R58NC2E56ZZ  là ID của điện thoại thật ) (nếu có nhiều hơn 1 thiết bị thì nên dùng cái này)
+flutter devices (kiểm tra ID của điện thoại thật)
+
